@@ -1,0 +1,17 @@
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Kuldeep Patidar");
+
+        int a = 10;
+        int b = 20;
+        int sum = a + b;
+
+        System.out.println("Sum = " + sum);
+
+        int a = 10;
+        int b = 20;
+        int sum = a - b;
+
+        System.out.println("Sum = " + sum);
+    }
+}
