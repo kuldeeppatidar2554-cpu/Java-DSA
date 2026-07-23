@@ -1,0 +1,51 @@
+public class ConditionalDemo{
+    public static void main(String[] args) {
+
+        int num = 10;
+
+        // 1. if
+        if (num > 0) {
+            System.out.println("Positive Number");
+        }
+
+        // 2. if-else
+        if (num % 2 == 0) {
+            System.out.println("Even Number");
+        } else {
+            System.out.println("Odd Number");
+        }
+
+        // 3. else-if ladder
+        if (num > 0) {
+            System.out.println("Positive");
+        } else if (num < 0) {
+            System.out.println("Negative");
+        } else {
+            System.out.println("Zero");
+        }
+
+        // 4. Nested if
+        if (num > 0) {
+            if (num < 100) {
+                System.out.println("Number is between 1 and 99");
+            }
+        }
+
+        // 5. switch
+        int day = 3;
+
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            default:
+                System.out.println("Invalid Day");
+        }
+    }
+}
