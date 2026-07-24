@@ -1,0 +1,94 @@
+public class AllLoops {
+    public static void main(String[] args) {
+
+        // ===============================
+        // 1. FOR LOOP
+        // ===============================
+        System.out.println("1. FOR LOOP");
+
+        // Syntax:
+        // for(initialization; condition; increment/decrement)
+
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Value = " + i);
+        }
+
+        // ===============================
+        // 2. WHILE LOOP
+        // ===============================
+        System.out.println("\n2. WHILE LOOP");
+
+        int j = 1;
+
+        // First condition is checked, then loop runs
+        while (j <= 5) {
+            System.out.println("Value = " + j);
+            j++;
+        }
+
+        // ===============================
+        // 3. DO-WHILE LOOP
+        // ===============================
+        System.out.println("\n3. DO-WHILE LOOP");
+
+        int k = 1;
+
+        // Loop executes at least one time
+        do {
+            System.out.println("Value = " + k);
+            k++;
+        } while (k <= 5);
+
+        // ===============================
+        // 4. NESTED LOOP
+        // ===============================
+        System.out.println("\n4. NESTED LOOP");
+
+        for (int row = 1; row <= 3; row++) {
+            for (int col = 1; col <= 3; col++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        // ===============================
+        // 5. FOR-EACH LOOP
+        // ===============================
+        System.out.println("\n5. FOR-EACH LOOP");
+
+        int numbers[] = {10, 20, 30, 40, 50};
+
+        for (int num : numbers) {
+            System.out.println(num);
+        }
+
+        // ===============================
+        // 6. BREAK STATEMENT
+        // ===============================
+        System.out.println("\n6. BREAK");
+
+        for (int i = 1; i <= 5; i++) {
+
+            if (i == 3) {
+                break;
+            }
+
+            System.out.println(i);
+        }
+
+        // ===============================
+        // 7. CONTINUE STATEMENT
+        // ===============================
+        System.out.println("\n7. CONTINUE");
+
+        for (int i = 1; i <= 5; i++) {
+
+            if (i == 3) {
+                continue;
+            }
+
+            System.out.println(i);
+        }
+
+    }
+}`
