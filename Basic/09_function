@@ -1,0 +1,39 @@
+public class Function{
+
+    // 1. Method without parameter and without return value
+    static void hello() {
+        System.out.println("Hello Java");
+    }
+
+    // 2. Method with parameter and without return value
+    static void display(int a) {
+        System.out.println("Value = " + a);
+    }
+
+    // 3. Method without parameter and with return value
+    static int getNumber() {
+        return 100;
+    }
+
+    // 4. Method with parameter and with return value
+    static int add(int x, int y) {
+        return x + y;
+    }
+
+    public static void main(String[] args) {
+
+        // Calling Method 1
+        hello();
+
+        // Calling Method 2
+        display(50);
+
+        // Calling Method 3
+        int num = getNumber();
+        System.out.println("Number = " + num);
+
+        // Calling Method 4
+        int sum = add(10, 20);
+        System.out.println("Sum = " + sum);
+    }
+}
