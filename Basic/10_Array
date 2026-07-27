@@ -1,0 +1,64 @@
+public class Array {
+    public static void main(String[] args) {
+
+        // 1. Declaration
+        int[] arr1;
+
+        // 2. Declaration + Memory Allocation
+        arr1 = new int[5];
+
+        // 3. Initialization
+        arr1[0] = 10;
+        arr1[1] = 20;
+        arr1[2] = 30;
+        arr1[3] = 40;
+        arr1[4] = 50;
+
+        // 4. Declaration + Initialization
+        int[] arr2 = {5, 10, 15, 20, 25};
+
+        // 5. Accessing Elements
+        System.out.println("First Element = " + arr2[0]);
+        System.out.println("Last Element = " + arr2[4]);
+
+        // 6. Using for loop
+        System.out.println("\nUsing For Loop:");
+        for (int i = 0; i < arr2.length; i++) {
+            System.out.println(arr2[i]);
+        }
+
+        // 7. Using for-each loop
+        System.out.println("\nUsing For-Each Loop:");
+        for (int value : arr2) {
+            System.out.println(value);
+        }
+
+        // 8. Sum of Array Elements
+        int sum = 0;
+        for (int value : arr2) {
+            sum += value;
+        }
+        System.out.println("\nSum = " + sum);
+
+        // 9. Largest Element
+        int max = arr2[0];
+        for (int value : arr2) {
+            if (value > max) {
+                max = value;
+            }
+        }
+        System.out.println("Largest = " + max);
+
+        // 10. Smallest Element
+        int min = arr2[0];
+        for (int value : arr2) {
+            if (value < min) {
+                min = value;
+            }
+        }
+        System.out.println("Smallest = " + min);
+
+        // 11. Length of Array
+        System.out.println("Length = " + arr2.length);
+    }
+}
