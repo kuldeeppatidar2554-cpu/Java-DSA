@@ -1,0 +1,20 @@
+public class StringDemo {
+    public static void main(String[] args) {
+
+        String str = "Java Programming";
+
+        System.out.println("Original String : " + str);
+        System.out.println("Length          : " + str.length());
+        System.out.println("Uppercase       : " + str.toUpperCase());
+        System.out.println("Lowercase       : " + str.toLowerCase());
+        System.out.println("Character       : " + str.charAt(2));
+        System.out.println("Substring       : " + str.substring(5));
+        System.out.println("Replace         : " + str.replace("Java", "Python"));
+        System.out.println("Contains        : " + str.contains("Java"));
+        System.out.println("Starts With     : " + str.startsWith("Java"));
+        System.out.println("Ends With       : " + str.endsWith("ing"));
+        System.out.println("Equals          : " + str.equals("Java Programming"));
+        System.out.println("Index Of        : " + str.indexOf("P"));
+        System.out.println("Trim            : " + "   Hello   ".trim());
+    }
+}
