@@ -1,0 +1,65 @@
+public class StringDemo {
+    public static void main(String[] args) {
+
+        // 1. String Declaration
+        String s1 = "Java";
+        String s2 = "Programming";
+
+        // 2. Concatenation
+        String s3 = s1 + " " + s2;
+        System.out.println("Concatenation: " + s3);
+
+        // 3. Length
+        System.out.println("Length: " + s3.length());
+
+        // 4. Uppercase
+        System.out.println("Uppercase: " + s3.toUpperCase());
+
+        // 5. Lowercase
+        System.out.println("Lowercase: " + s3.toLowerCase());
+
+        // 6. Character at Index
+        System.out.println("Character at index 2: " + s1.charAt(2));
+
+        // 7. Compare Strings
+        System.out.println("Equals: " + s1.equals("Java"));
+
+        // 8. Ignore Case
+        System.out.println("Equals Ignore Case: " + s1.equalsIgnoreCase("java"));
+
+        // 9. Contains
+        System.out.println("Contains 'gram': " + s2.contains("gram"));
+
+        // 10. Starts With
+        System.out.println("Starts With 'Pro': " + s2.startsWith("Pro"));
+
+        // 11. Ends With
+        System.out.println("Ends With 'ing': " + s2.endsWith("ing"));
+
+        // 12. Substring
+        System.out.println("Substring: " + s2.substring(3));
+
+        // 13. Replace
+        System.out.println("Replace: " + s2.replace("Programming", "Coding"));
+
+        // 14. Index Of
+        System.out.println("Index of 'a': " + s1.indexOf('a'));
+
+        // 15. Trim
+        String s4 = "   Hello Java   ";
+        System.out.println("Trim: '" + s4.trim() + "'");
+
+        // 16. Empty String
+        String s5 = "";
+        System.out.println("Is Empty: " + s5.isEmpty());
+
+        // 17. Split
+        String fruits = "Apple,Mango,Banana";
+        String[] arr = fruits.split(",");
+
+        System.out.println("Split:");
+        for (String fruit : arr) {
+            System.out.println(fruit);
+        }
+    }
+}
