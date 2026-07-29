@@ -1,0 +1,30 @@
+class Student {
+
+    int id;
+    String name;
+
+    static String college = "MIT";
+
+    Student(int id, String name) {
+
+        this.id = id;
+        this.name = name;
+    }
+
+    void display() {
+
+        System.out.println(id + " " + name + " " + college);
+    }
+}
+
+public class StaticKeyword {
+
+    public static void main(String[] args) {
+
+        Student s1 = new Student(101, "Kuldeep");
+        Student s2 = new Student(102, "Rahul");
+
+        s1.display();
+        s2.display();
+    }
+}
