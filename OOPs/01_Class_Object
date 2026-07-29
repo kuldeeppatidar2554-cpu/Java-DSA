@@ -1,0 +1,28 @@
+class Student {
+
+    // Data Members
+    int id;
+    String name;
+
+    // Method
+    void display() {
+        System.out.println("Student ID : " + id);
+        System.out.println("Student Name : " + name);
+    }
+}
+
+public class ClassObject {
+
+    public static void main(String[] args) {
+
+        // Creating Object
+        Student s1 = new Student();
+
+        // Assigning Values
+        s1.id = 101;
+        s1.name = "Kuldeep";
+
+        // Calling Method
+        s1.display();
+    }
+}
