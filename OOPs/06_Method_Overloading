@@ -1,0 +1,29 @@
+class Calculator {
+
+    // Method 1
+    void add(int a, int b) {
+        System.out.println("Sum = " + (a + b));
+    }
+
+    // Method 2
+    void add(int a, int b, int c) {
+        System.out.println("Sum = " + (a + b + c));
+    }
+
+    // Method 3
+    void add(double a, double b) {
+        System.out.println("Sum = " + (a + b));
+    }
+}
+
+public class MethodOverloading {
+
+    public static void main(String[] args) {
+
+        Calculator obj = new Calculator();
+
+        obj.add(10, 20);
+        obj.add(10, 20, 30);
+        obj.add(10.5, 20.5);
+    }
+}
