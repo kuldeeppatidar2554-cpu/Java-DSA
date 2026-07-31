@@ -1,0 +1,16 @@
+final class College {
+
+    void display() {
+        System.out.println("Welcome to MIT College");
+    }
+}
+
+public class FinalKeyword {
+
+    public static void main(String[] args) {
+
+        College c = new College();
+
+        c.display();
+    }
+}
