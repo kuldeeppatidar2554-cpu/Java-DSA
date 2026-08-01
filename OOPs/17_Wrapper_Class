@@ -1,0 +1,17 @@
+public class WrapperClass {
+
+    public static void main(String[] args) {
+
+        int num = 100;
+
+        // Boxing
+        Integer obj = Integer.valueOf(num);
+
+        // Unboxing
+        int value = obj.intValue();
+
+        System.out.println("Primitive : " + num);
+        System.out.println("Wrapper : " + obj);
+        System.out.println("Unboxing : " + value);
+    }
+}
