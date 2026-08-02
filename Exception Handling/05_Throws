@@ -1,0 +1,21 @@
+import java.io.IOException;
+
+public class Throws {
+
+    static void check() throws IOException{
+
+        throw new IOException("Input Output Exception");
+    }
+
+    public static void main(String[] args) {
+
+        try{
+
+            check();
+
+        }catch(IOException e){
+
+            System.out.println(e.getMessage());
+        }
+    }
+}
