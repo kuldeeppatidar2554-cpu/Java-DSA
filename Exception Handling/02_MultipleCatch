@@ -1,0 +1,28 @@
+public class MultipleCatch {
+
+    public static void main(String[] args) {
+
+        try {
+
+            String str = null;
+
+            System.out.println(str.length());
+
+            int arr[] = {10,20};
+
+            System.out.println(arr[5]);
+
+        } catch (NullPointerException e) {
+
+            System.out.println("Null Pointer Exception");
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+
+            System.out.println("Array Index Out Of Bounds");
+
+        } catch (Exception e) {
+
+            System.out.println("General Exception");
+        }
+    }
+}
