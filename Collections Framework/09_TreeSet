@@ -1,0 +1,45 @@
+import java.util.TreeSet;
+
+public class TreeSet {
+
+    public static void main(String[] args) {
+
+        TreeSet<Integer> set = new TreeSet<>();
+
+        set.add(50);
+        set.add(10);
+        set.add(40);
+        set.add(20);
+        set.add(30);
+
+        System.out.println("TreeSet : " + set);
+
+        System.out.println("First : " + set.first());
+
+        System.out.println("Last : " + set.last());
+
+        System.out.println("Higher(20) : " + set.higher(20));
+
+        System.out.println("Lower(20) : " + set.lower(20));
+
+        System.out.println("Ceiling(21) : " + set.ceiling(21));
+
+        System.out.println("Floor(21) : " + set.floor(21));
+
+        System.out.println("Poll First : " + set.pollFirst());
+
+        System.out.println("Poll Last : " + set.pollLast());
+
+        System.out.println("After Poll : " + set);
+
+        System.out.println("Contains 30 : " + set.contains(30));
+
+        System.out.println("Size : " + set.size());
+
+        System.out.println("Is Empty : " + set.isEmpty());
+
+        set.clear();
+
+        System.out.println("After Clear : " + set);
+    }
+}
