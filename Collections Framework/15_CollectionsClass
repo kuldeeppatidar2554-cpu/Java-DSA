@@ -1,0 +1,78 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class CollectionsClass {
+
+    public static void main(String[] args) {
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        list.add(50);
+        list.add(20);
+        list.add(10);
+        list.add(40);
+        list.add(30);
+
+        System.out.println("Original : " + list);
+
+        // sort()
+        Collections.sort(list);
+        System.out.println("Sort : " + list);
+
+        // reverse()
+        Collections.reverse(list);
+        System.out.println("Reverse : " + list);
+
+        // shuffle()
+        Collections.shuffle(list);
+        System.out.println("Shuffle : " + list);
+
+        // max()
+        System.out.println("Max : " + Collections.max(list));
+
+        // min()
+        System.out.println("Min : " + Collections.min(list));
+
+        // frequency()
+        list.add(20);
+        System.out.println("Frequency of 20 : " +
+                Collections.frequency(list, 20));
+
+        // binarySearch()
+        Collections.sort(list);
+        System.out.println("Binary Search(30) : " +
+                Collections.binarySearch(list, 30));
+
+        // swap()
+        Collections.swap(list, 0, 1);
+        System.out.println("Swap : " + list);
+
+        // fill()
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("A");
+        names.add("B");
+        names.add("C");
+
+        Collections.fill(names, "Java");
+
+        System.out.println("Fill : " + names);
+
+        // copy()
+        ArrayList<String> source = new ArrayList<>();
+
+        source.add("One");
+        source.add("Two");
+        source.add("Three");
+
+        ArrayList<String> destination = new ArrayList<>();
+
+        destination.add("");
+        destination.add("");
+        destination.add("");
+
+        Collections.copy(destination, source);
+
+        System.out.println("Copy : " + destination);
+    }
+}
