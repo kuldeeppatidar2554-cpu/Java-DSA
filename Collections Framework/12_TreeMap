@@ -1,0 +1,42 @@
+import java.util.TreeMap;
+import java.util.Map;
+
+public class TreeMap {
+
+    public static void main(String[] args) {
+
+        TreeMap<Integer, String> map = new TreeMap<>();
+
+        map.put(103, "Java");
+        map.put(101, "Python");
+        map.put(102, "C++");
+
+        System.out.println("TreeMap : " + map);
+
+        System.out.println("First Key : " + map.firstKey());
+        System.out.println("Last Key : " + map.lastKey());
+
+        System.out.println("Higher Key : " + map.higherKey(101));
+        System.out.println("Lower Key : " + map.lowerKey(102));
+
+        System.out.println("Ceiling Key : " + map.ceilingKey(102));
+        System.out.println("Floor Key : " + map.floorKey(102));
+
+        map.replace(102, "Spring");
+
+        System.out.println("After Replace : " + map);
+
+        map.remove(103);
+
+        System.out.println("After Remove : " + map);
+
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+
+        map.clear();
+
+        System.out.println("After Clear : " + map);
+    }
+}
