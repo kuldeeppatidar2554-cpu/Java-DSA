@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+class Student implements Comparable<Student> {
+
+    int id;
+    String name;
+
+    Student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    @Override
+    public int compareTo(Student s) {
+        return this.id - s.id;   // Sort by ID
+    }
+
+    @Override
+    public String toString() {
+        return id + " " + name;
+    }
+}
+
+public class Comparable {
+
+    public static void main(String[] args) {
+
+        ArrayList<Student> list = new ArrayList<>();
+
+        list.add(new Student(103, "Rahul"));
+        list.add(new Student(101, "Kuldeep"));
+        list.add(new Student(102, "Aman"));
+
+        Collections.sort(list);
+
+        for (Student s : list) {
+            System.out.println(s);
+        }
+    }
+}
