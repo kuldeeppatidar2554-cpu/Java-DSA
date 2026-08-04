@@ -1,0 +1,58 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class LinkedHashMap {
+
+    public static void main(String[] args) {
+
+        LinkedHashMap<Integer, String> map = new LinkedHashMap<>();
+
+        // put()
+        map.put(101, "Kuldeep");
+        map.put(102, "Rahul");
+        map.put(103, "Aman");
+
+        System.out.println("LinkedHashMap : " + map);
+
+        // get()
+        System.out.println("Key 102 : " + map.get(102));
+
+        // containsKey()
+        System.out.println("Contains Key 101 : " + map.containsKey(101));
+
+        // containsValue()
+        System.out.println("Contains Value Aman : " + map.containsValue("Aman"));
+
+        // replace()
+        map.replace(102, "Rohit");
+        System.out.println("After Replace : " + map);
+
+        // remove()
+        map.remove(103);
+        System.out.println("After Remove : " + map);
+
+        // keySet()
+        System.out.println("\nKeys");
+        for (Integer key : map.keySet()) {
+            System.out.println(key);
+        }
+
+        // values()
+        System.out.println("\nValues");
+        for (String value : map.values()) {
+            System.out.println(value);
+        }
+
+        // entrySet()
+        System.out.println("\nEntries");
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+
+        System.out.println("Size : " + map.size());
+
+        map.clear();
+
+        System.out.println("After Clear : " + map);
+    }
+}
